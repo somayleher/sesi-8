@@ -1,0 +1,177 @@
+body,
+.navbar-color {
+  background-color: #e4e4e4 !important;
+}
+
+.content {
+  background-color: #fff;
+  padding-bottom: 20px;
+  border-radius: 12px;
+}
+
+.content > hr {
+  border: 1px solid;
+}
+
+.navbar {
+  height: calc(48px + 80px);
+}
+
+.profile-picture {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  padding: 5px;
+  border: 2px solid gray;
+}
+
+.mini-profile .name {
+  width: 100px !important;
+}
+
+.mini-nav {
+  width: 400px;
+}
+
+.brand-black {
+  color: #3b3949;
+}
+
+.brand-orange,
+.text-orange {
+  color: #ff5f26;
+}
+
+.brand-text {
+  font-size: 28px;
+}
+/* container */
+.btn-orange,
+.btn-orange:focus,
+.btn-orange:active {
+  background-color: #ff5f26;
+  color: #fff;
+}
+
+.text-gray {
+  color: #7a7f83;
+}
+
+.btn-orange-bordered,
+.btn-orange-bordered:active,
+.btn-orange-bordered:focus {
+  border-color: #ff5f26;
+  color: #ff5f26;
+}
+
+.btn-orange-bordered > img {
+  width: 24px;
+}
+.custom-checkbox {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px !important;
+}
+
+.custom-checkbox:checked {
+  background-color: #ff5f26;
+  border-color: #ff5f26;
+  box-shadow: none;
+}
+
+.custom-checkbox:focus {
+  box-shadow: none;
+  border-color: #dee2a6;
+}
+
+.custom-badge {
+  background-color: #ffebd3;
+  color: #ff5f26;
+  padding: 8px 12px;
+  border-radius: 14px;
+}
+
+.custom-secondary-text {
+  font-size: 12px;
+}
+
+.bottom > img {
+  height: 25px;
+  width: 50px;
+}
+
+.bottom > div {
+  color: #7a7f83;
+}
+
+.add-input-task {
+  border: unset;
+  background-color: transparent;
+}
+
+.add-input-task:focus {
+  outline: none;
+}
+
+.add-item-wrapper {
+  background-color: #f5f5f5;
+}
+
+.coret {
+  text-decoration: line-through !important;
+}
+
+.drp-dwn {
+  display: flex;
+}
+
+#click-me {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#click-me:active {
+  background-color: #eee;
+}
+
+.tambah > img {
+  width: 22px;
+  height: 22px;
+}
+
+.tambah {
+  color: #ff5f26;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 166.667% */
+  border-radius: 50px;
+  border: 1px solid var(--text-colors-gray, #ccced2);
+  background: var(--text-colors-white, #fff);
+}
+
+.subtask {
+  background-color: #f5f5f5;
+  padding-bottom: 20px;
+  border-radius: 12px;
+}
+
+.btn-sub {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}

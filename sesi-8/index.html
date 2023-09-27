@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-color bg-body-tertiary">
+      <div class="container">
+        <div class="me-auto">
+          <span class="navbar-brand mb-0 h1 brand-text">
+            <span class="brand-black">waz</span>
+            <span class="brand-orange">wez.</span>
+          </span>
+        </div>
+        <div class="row align-items-center mini-nav">
+          <div class="col-2">
+            <img src="/asset/Notification.png" alt="notif" />
+          </div>
+          <div class="col-10">
+            <div class="row mini-profile">
+              <div class="col-2">
+                <img
+                  class="profile-picture rounded-circle"
+                  src="/asset/foto.jpg"
+                  alt="profile"
+                />
+              </div>
+              <div class="col-auto">Krozeo Jupiter</div>
+              <div class="col-2">
+                <img src="./Arrow - Down 2.png" alt="arrow-down" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR SELESAI -->
+    <div class="container content">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-orange text-uppercase">MY TASK</div>
+          <div class="row align-items-center">
+            <div class="col h1">To Do List</div>
+            <div class="col text-end">
+              <button id="tambah-tugas" class="btn btn-orange rounded-5">
+                <img src="asset/Plus.png" alt="plus" />
+                Tambah tugas
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="text-gray">Buat list tugas harian</div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col">Sort By</div>
+        <div class="col text-end">
+          <button class="btn btn-orange-bordered rounded-5">
+            By Tanggal
+            <img src="asset/Arrow - Down 1.jpg" alt="own" />
+          </button>
+        </div>
+      </div>
+      <div class="countainer">
+        <div id="new-item" style="display: none;" class="row add-item-wrapper">
+          <div class="col-1">
+            <div class="form-check">
+              <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-auto">
+              <div class="col fw-bold">
+                <input class="add-input-task" type="text" placeholder="Masukan nama tugas" id="">
+              </div>
+            </div>
+            <div class="row row-cols-auto">
+              <div class="col fw-bold">
+                <div class="row">
+                  <div class="col">
+                    <img src="asset/menu.jpg" alt="desc">
+                  </div>
+                  <div class="col">
+                    <input class="add-input-task" type="text" placeholder="Deskripsi Tugas (optional) " id="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-auto">
+              <div class="col fw-bold">
+                <div class="row">
+                  <div class="col">
+                    <img src="asset/Calendar.jpg" alt="time">
+                  </div>
+                  <div class="col">
+                    <input class="add-input-task" type="text" placeholder="Tanggal dan Waktu" id="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <div class="form-check">
+              <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-auto">
+              <div class="col fw-bold">Product Design</div>
+              <div class="col"><span class="badge custom-badge">Hari ini</span></div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-body-secondary custom-secondary-text">Tugas untuk design team</div>
+            </div>
+          </div>
+          <div class="col-1">
+            <button id="click" class="btn-sub">
+              <img src="../Arrow - Down 2.png"/>
+            </button>
+          </div>
+        </div>
+        <div id="down" class="container subtask" style="display: none;">
+          <div class="row align-items-center">
+            <div class="col">Subtask</div>
+            <div class="col text-end">
+              <button class="btn btn-orange-bordered tambah rounded-5">
+                <img src="asset/tambah.png" alt="own" />
+                Tambah
+              </button>
+            </div>
+            <div class="row">
+          <div class="row">
+            <div class="col-1">
+              <div class="form-check">
+                <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+            </div>
+            <div class="col">
+              <div class="row row-cols-auto">
+                <div class="col">Design Review</div>
+              </div>
+            </div>
+            <div class="col-1">
+              <img src="asset/trash.png" alt="trash">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <div class="form-check">
+                <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+            </div>
+            <div class="col">
+              <div class="row row-cols-auto">
+                <div class="col">Low-Fidelity design</div>
+              </div>
+            </div>
+            <div class="col-1">
+              <img src="asset/trash.png" alt="trash">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <div class="form-check">
+                <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+            </div>
+            <div class="col">
+              <div class="row row-cols-auto">
+                <div class="col">High-Fidelity design</div>
+              </div>
+            </div>
+            <div class="col-1">
+              <img src="asset/trash.png" alt="trash">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <div class="form-check">
+                <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+            </div>
+            <div class="col">
+              <div class="row row-cols-auto">
+                <div class="col">Design Guidelines</div>
+              </div>
+            </div>
+            <div class="col-1">
+              <img src="asset/trash.png" alt="trash">
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <div class="form-check">
+              <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-auto">
+              <div class="col fw-bold">Development</div>
+              <div class="col"><span class="badge custom-badge">16 Juni 2022</span></div>
+            </div>
+          </div>
+          <div class="col-1">
+            <img src="./Arrow - Down 2.png" alt="arrow-down">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <div class="form-check">
+              <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckDefault">
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-auto">
+              <div class="col fw-bold">Launching wazwez. Website</div>
+              <div class="col"><span class="badge custom-badge">20 Juni 2022</span></div>
+            </div>
+          </div>
+          <div class="col-1">
+            <img src="./Arrow - Down 2.png" alt="arrow-down">
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row align-items-center bottom">
+        <button id="click-me" class="btn">
+          <img src="./Arrow - Down 2.png"/>
+        </button>
+        <div class="col-auto">Terselesaikan (3 Tugas)</div>
+      </div>
+      <div id="drp-dwn" style="display: none;">
+        <div class="row">
+          <div class="col-1">
+            <div class="form-check">
+              <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked" checked>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-auto">
+              <div>
+                <h7 class="fw-bold coret">Requirements Detail</h7>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <img src="./Arrow - Down 2.png" alt="arrow-down">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <div class="form-check">
+              <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked" checked>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-auto">
+              <div>
+                <h7 class="fw-bold coret">Backlog Teams</h7>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <img src="./Arrow - Down 2.png" alt="arrow-down">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <div class="form-check">
+              <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckChecked" checked>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-auto">
+              <div>
+                <h7 class="fw-bold coret">Meeting With Teams</h7>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <img src="./Arrow - Down 2.png" alt="arrow-down">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
